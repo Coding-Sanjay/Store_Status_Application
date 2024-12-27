@@ -1,0 +1,127 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* GoogleMapComponent styles */
+.google-map-container {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.marker-info {
+  font-size: 14px;
+}
+
+.marker-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #007bff;
+}
+
+.marker-info p {
+  margin-top: 5px;
+}
+
+/* AddStoreForm styles */
+.add-store-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.add-store-form input,
+.add-store-form select,
+.add-store-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-store-form input:focus,
+.add-store-form select:focus {
+  border-color: #007bff;
+}
+
+.add-store-form button {
+  background-color: #007bff;
+}
+
+.add-store-form button:hover {
+  background-color: #0056b3;
+}
+
+/* StoreList styles */
+.store-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.store-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.store-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.store-list li:last-child {
+  border-bottom: none;
+}
+
+.store-list h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.store-list li span {
+  font-weight: bold;
+}
