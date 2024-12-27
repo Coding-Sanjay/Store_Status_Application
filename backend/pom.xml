@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.example</groupId>
+	<artifactId>storeStatusApplication</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Store Status Application</name>
+	<description>Spring Boot project for store status management</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.10</version>  <!-- Or the version you're using -->
+	</parent>
+
+	<properties>
+		<spring-boot.version>3.1.0</spring-boot.version>
+		<java.version>17</java.version> <!-- Use the Java version you're working with -->
+	</properties>
+
+	<dependencies>
+
+		<!-- Spring Boot Starter Web -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Starter Data JPA -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>2.7.6</version>
+		</dependency>
+
+		<!-- Jakarta Persistence API -->
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
+			<version>3.1.0</version> <!-- Ensure this is the version you need -->
+		</dependency>
+
+		<!-- Hibernate Core (JPA Implementation) -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.6.12.Final</version> <!-- Use the version compatible with Jakarta Persistence -->
+		</dependency>
+
+		<!-- H2 Database (for in-memory DB) -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- Spring Boot Starter Test (for unit testing) -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-websocket</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.33</version>
+		</dependency>
+
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+
+	<repositories>
+		<!-- Maven Central repository -->
+		<repository>
+			<id>central</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+	</repositories>
+
+</project>
