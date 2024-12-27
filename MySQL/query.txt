@@ -1,0 +1,14 @@
+CREATE DATABASE store_status_db;
+
+USE store_status_db;
+
+CREATE TABLE store (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    latitude DOUBLE,
+    longitude DOUBLE,
+    status BOOLEAN
+);
+
+ALTER TABLE store
+ADD COLUMN address VARCHAR(255);
